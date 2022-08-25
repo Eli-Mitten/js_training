@@ -9,15 +9,14 @@ function contarOvejas(ovejas) {
     const regex2 = /[n]/gi;
 
     // aquí tu magia
-    let newOvejas = []
+    let newOvejas = [];
     ovejas.map(oveja => {
-        if(oveja.color === "rojo"&& regex1.test(oveja.name) && regex2.test(oveja.name)) {
-            newOvejas.push(oveja)
+        if(oveja.color === "rojo" && regex1.test(oveja.name) && regex2.test(oveja.name)) {
+            newOvejas.push(oveja);
         }
     });
     return newOvejas
-    // return ovejas
-  }
+}
   
   const ovejas = [
     { name: 'Noa', color: 'azul' },
@@ -28,4 +27,4 @@ function contarOvejas(ovejas) {
     { name: 'Nnnnnnnn', color: 'rojo'}
   ]
   
-  contarOvejas(ovejas)
+  contarOvejas(ovejas);
